@@ -9,7 +9,6 @@ document.getElementById('userForm').addEventListener('submit', function(e) {
         age: formData.get('age'),
         from: formData.get('from'),
         job: formData.get('job'),
-        gender: formData.get('gender')
     };
     
     createProfileCard(user);
@@ -27,7 +26,7 @@ function createProfileCard(user) {
             <h2 class="profile-name">${user.firstName} ${user.lastName}<span class="profile-age">, ${user.age}</span></h2>
             <p class="profile-detail"><strong>From:</strong> ${user.from}</p>
             <p class="profile-detail"><strong>Job:</strong> ${user.job}</p>
-            <p class="profile-gender">Gender: ${user.gender}</p>
+      
         </div>
     `;
     
